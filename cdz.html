@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <title>Os Cavaleiros dos Zodíaco</title>
+</head>
+<body>
+    <div class="container">
+        <img src="/imagens/cavaleiros2.jpg" alt="Papel de parede Cavaleiros do Zodíaco">
+        <div class="player">
+            <audio id="audio-player"></audio>
+
+            <h2 id="music-name" class="music-name"></h2>
+            <p id="music-author" class="music-author"></p>
+
+            <div class="player-progress">
+                <div class="progress-values">
+                    <span id="player-current-time">--:--</span>
+                    <span id="player-duration">--:--</span>
+                </div>
+                <progress id="player-progress"></progress>
+            </div>
+
+            <div class="player-buttons">
+                <button id="btn-prev" class="btn btn-prev">
+                    <i class="bi bi-rewind-fill"></i>
+                </button>
+                <button id="btn-play" class="btn btn-play">
+                    <i id="btn-play-icon" class="bi bi-play-fill"></i>
+                </button>
+                <button id="btn-next" class="btn btn-next">
+                    <i class="bi bi-fast-forward-fill"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="cdz.js"></script>
+</html>

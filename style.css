@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: #5EC487;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    max-width: 40.62rem;
+    margin: 5rem 0rem 5rem 15rem;
+    padding: 3.12rem 1.87rem 3.12rem 1.25rem;
+    background: #ffffff;
+    border-radius: 1.5rem;
+    
+}
+
+.card img{
+    max-width: 17.5rem;
+    width: 28vw;
+    height: 18.75rem;
+    object-fit: cover;
+    margin-left: -3.75rem;
+    margin-right: 1.87rem;
+    border-radius: inherit;
+    box-shadow: 0rem 3.75rem 2.5rem rgb(0, 0, 0 / 8%);
+}
+
+.card p {
+    color: rgb(0, 0, 0 / 70%);
+    text-align: center;
+}
+
+.card button {
+    border: 0;
+    background: #5FCEDA;
+    padding: 1rem 1.62rem;
+    border-radius: 2.5rem;
+}
+
+.card a{
+    font-family: inherit;
+    color: #f8f8f8;
+    font-size: 1rem;
+}
+
+@media (width <= 46.25rem){
+    .card{
+        flex-direction: column;
+        text-align: center;
+        margin: 0rem 2.5rem;
+        padding-left: 3.12rem;
+        padding-right: 3.12rem;
+        width: 100%;
+        margin-top: 10rem;
+    }
+
+    .card img {
+        margin: -6.25rem 0rem 1.87rem 0rem;
+        width: 100%;
+        max-width: 62.5rem;
+    }
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    max-width: 50.62rem;
+    margin: 5rem 0rem 5rem 15rem;
+    padding: 3.12rem 1.87rem 3.12rem 1.25rem;
+    background: #ffffff;
+    border-radius: 1.5rem;
+}
+
+.container img{
+    max-width: 30.5rem;
+    width: 28vw;
+    height: 18.75rem;
+    object-fit: cover;
+    margin-left: -3.75rem;
+    margin-right: 1.87rem;
+    border-radius: inherit;
+    box-shadow: 0rem 3.75rem 2.5rem rgb(0, 0, 0 / 8%);
+}
+
+
+@media (width <= 46.25rem){
+    .container{
+        flex-direction: column;
+        text-align: center;
+        margin: 0rem 2.5rem;
+        padding-left: 3.12rem;
+        padding-right: 3.12rem;
+        width: 100%;
+        margin-top: 10rem;
+    }
+
+    .container img {
+        margin: -6.25rem 0rem 1.87rem 0rem;
+        width: 100%;
+        max-width: 62.5rem;
+    }
+}
+
+.player{
+    width: 30rem;
+    padding: 3rem 4rem;
+    border-radius: 2.25rem;
+    background: #eaeaea;
+    box-shadow: 2.56rem 2.56rem 5.12rem #bebebe, -2.56rem -2.56rem 5.12rem #ffffff;
+}
+
+.player .music-name {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.player .music-author{
+    margin: 0;
+    color: #a5aaaf;
+    text-align: center;
+}
+
+.player .player-progress {
+    margin-top: 2.25rem;
+}
+
+.player .player-progress .progress-values {
+    display: flex;
+    justify-content: space-between;
+    color: #a5aaaf;
+    font-size: 0.87rem;
+}
+
+.player .player-progress progress{
+    width: 100%;
+    height: 0.5rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.player .player-progress progress::-webkit-progress-bar {
+    background-color: #c3c7cc;
+    border-radius: 0.18rem;
+}
+
+.player .player-progress progress::-webkit-progress-value {
+    background: linear-gradient(to right, #5232c1, #12ccd0);
+    border-radius: 0.18rem;
+}
+
+.player .player-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 2rem;
+}
+
+.player .player-buttons .btn {
+    font-size: 1rem;
+    width: 3rem;
+    height: 3rem;
+    color: #6f7275;
+    background: linear-gradient(145deg, #5232c1, #12ccd0);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.player .player-buttons .btn.btn-prev{
+    box-shadow: 0.31rem 0.31rem 0.62rem #aaaaaa, -0.31rem -0.31rem 0.62rem #ffffff;
+}
+
+.player .player-buttons .btn.btn-prev i {
+    display: inline-block;
+    margin-top: 0.12rem;
+    margin-right: 0.12rem;
+    background: #e4d6d6;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.player .player-buttons .btn.btn-play {
+    font-size: 2.4rem;
+    width: 5rem;
+    height: 5rem;
+    box-shadow: 0.37rem 0.37rem 0.74rem #aaaaaa, -0.37rem -0.37rem 0.74rem #ffffff;
+}
+
+.player .player-buttons .btn.btn-play i{
+    display: inline-block;
+    margin-top: 0.25rem;
+    margin-left: 0.12rem;
+    background: #e4d6d6;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.player .player-buttons .btn.btn-next{
+    box-shadow: 0.31rem 0.31rem 0.62rem #aaaaaa, -0.31rem -0.31rem 0.62rem #ffffff;
+}
+
+.player .player-buttons .btn.btn-next i {
+    display: inline-block;
+    margin-top: 0.12rem;
+    margin-left: 0.12rem;
+    background: #e4d6d6;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
